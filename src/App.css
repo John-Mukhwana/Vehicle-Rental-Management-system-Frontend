@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #3498db; /* Fallback color */
+  --primary-color-oklch: oklch(0.3 0.5 0.5); /* Your original color */
+}
+
+
+/* Position the toasts at the top of the screen */
+[data-toast] {
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+
+.table-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container th, .table-container td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table-container th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.table-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-container tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-container .actions button {
+  padding: 6px 12px;
+  margin-right: 5px;
+}
