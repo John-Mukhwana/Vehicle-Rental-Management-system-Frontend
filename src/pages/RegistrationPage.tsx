@@ -13,7 +13,9 @@ const RegistrationPage =() => {
                     duration: 5000, // Duration in milliseconds
                 }}
             />
-         <Navbar/>
+         <Navbar toggleSidebar={function (): void {
+                throw new Error("Function not implemented.");
+            } }/>
             <RegistrationForm/>
         <Footer/>
          </>

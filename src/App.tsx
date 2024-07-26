@@ -12,7 +12,6 @@ import UserLogin from "./pages/userLogin"
 import RegistrationPage from "./pages/RegistrationPage"
 import UserDetails from "./pages/userDetailsForm"
 import UserHome from './pages/UserPages/userHome';
-import Paymentpage from "./pages/paymentPage"
 import AdminVehicle from "./pages/AdminPages/Vehicles"
 import Ticketspage from "./pages/AdminPages/tickets"
 import FleetManagementPage from "./pages/AdminPages/fleets"
@@ -50,12 +49,7 @@ function App() {
     element: <UserLogin />,
     errorElement: <Error />,
    },
-   
-   {
-    path: "/payment",
-    element: <Paymentpage />,
-    errorElement: <Error />,
-   },
+  
       
     {
       path: "AdminDashboard",

@@ -49,7 +49,9 @@ const UserDetailsForm: React.FC = () => {
 
   return (
     <>
-    <Navbar/>
+    <Navbar toggleSidebar={function (): void {
+        throw new Error('Function not implemented.');
+      } }/>
     <div className="min-h-screen flex items-center justify-center bg-gray-900 p-4">
   <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800 dark:text-gray-200">
     <div className="text-center mb-6">

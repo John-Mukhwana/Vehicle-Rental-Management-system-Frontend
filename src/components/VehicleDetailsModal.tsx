@@ -2,7 +2,7 @@
 import React from 'react';
 
 interface Vehicle {
-  vehicleSpecId: number;
+  vehicleId: number;
   rentalRate: string;
   availability: string;
   specifications: {
@@ -45,7 +45,7 @@ const VehicleDetailsModal: React.FC<VehicleDetailsPopupProps> = ({ vehicle, onCl
         )}
         <div className="space-y-2">
           <p className="text-gray-700 dark:text-gray-300">
-            <span className="font-bold">Vehicle ID:</span> {vehicle.vehicleSpecId}
+            <span className="font-bold">Vehicle ID:</span> {vehicle.vehicleId}
           </p>
           <p className="text-gray-700 dark:text-gray-300">
             <span className="font-bold">Manufacturer:</span> {vehicle.specifications.manufacturer}

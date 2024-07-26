@@ -2,12 +2,12 @@
 
 import React, { useState } from 'react';
 import AddBooking from '../../components/AddBookings'; // Adjust the import path if needed
-import { Booking } from '../../types'; // Adjust the import path if needed
+import { Booking } from '../../types/types'; // Adjust the import path if needed
 import { Toaster } from 'sonner';
 import ManageBookings from '../../components/BookingsTable';
 
 const AdminBookings: React.FC = () => {
-  const [bookings, setBookings] = useState<Booking[]>([]); // State to hold the list of bookings
+  const [, setBookings] = useState<Booking[]>([]); // State to hold the list of bookings
 
   // Function to handle the addition of a new booking
   const handleAddBooking = (newBooking: Booking) => {

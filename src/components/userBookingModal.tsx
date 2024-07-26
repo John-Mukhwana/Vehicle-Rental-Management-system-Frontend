@@ -10,7 +10,7 @@ interface BookingModalProps {
   onClose: () => void;
 }
 
-const BookingModal: React.FC<BookingModalProps> = ({ vehicleId, userId, isOpen, onClose }) => {
+const BookingModal: React.FC<BookingModalProps> = ({ vehicleId, isOpen, onClose }) => {
   const [bookingDate, setBookingDate] = useState<string>('');
   const [returnDate, setReturnDate] = useState<string>('');
   const [rentalRate, setRentalRate] = useState<number>(0);

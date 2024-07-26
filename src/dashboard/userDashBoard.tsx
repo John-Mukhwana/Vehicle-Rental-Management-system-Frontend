@@ -45,7 +45,9 @@ const UserDashboard = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar toggleSidebar={function (): void {
+        throw new Error('Function not implemented.');
+      } } />
       <div className="flex h-screen bg-gray-50 dark:bg-gray-800">
         {/* Sidebar */}
         <aside className="top-10 mf-5 z-40 w-74 h-full bg-green-600 dark:bg-gray-900 shadow-2xl p-4">

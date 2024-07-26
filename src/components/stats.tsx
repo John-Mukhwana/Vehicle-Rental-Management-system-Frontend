@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Users, Calendar, DollarSign, Car, Wrench } from 'lucide-react'; // Import icons from Lucide
 

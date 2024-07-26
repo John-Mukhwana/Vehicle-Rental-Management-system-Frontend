@@ -1,6 +1,6 @@
 
-import  React, { useState } from 'react';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaDollarSign, FaCalendarCheck, FaShieldAlt, FaTruck, FaHeadset, FaCalendar, FaUsers, FaSuitcaseRolling, FaTag } from 'react-icons/fa'; // Import icons for services
+import  { useState } from 'react';
+import {  FaDollarSign, FaCalendarCheck, FaShieldAlt, FaTruck, FaHeadset, FaCalendar, FaUsers, FaSuitcaseRolling, FaTag } from 'react-icons/fa'; // Import icons for services
 import { Link } from 'react-router-dom';
 import ContactUs from '../components/contactUs';
 
@@ -54,7 +54,7 @@ const Home = () => {
           <a href="#services" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Our Services</a>
           <a href="#fleet" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Our Fleet</a>
           <a href="" className="bg-yellow-500 text-black py-1 px-3 rounded hover:bg-yellow-400" onClick={() => setIsMenuOpen(false)}>Register</a>
-          <a href="/userLogin" className="bg-green-500 text-white py-1 px-3 rounded hover:bg-green-400" onClick={() => setIsMenuOpen(false)}>Login</a>
+          <a href="/Login" className="bg-green-500 text-white py-1 px-3 rounded hover:bg-green-400" onClick={() => setIsMenuOpen(false)}>Login</a>
         </div>
       </nav>
       

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaCar, FaStar, FaHandHoldingHeart } from 'react-icons/fa'; // Import additional icons for the message
 
 const RegistrationSideCard = () => {

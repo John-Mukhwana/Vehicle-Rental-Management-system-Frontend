@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaFacebook, FaTwitter, FaWhatsapp } from 'react-icons/fa'; // Import social media icons from react-icons
 import RegistrationSideCard from './regwelcome';
 

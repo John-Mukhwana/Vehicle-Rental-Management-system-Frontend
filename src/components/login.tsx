@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -78,7 +78,9 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar toggleSidebar={function (): void {
+        throw new Error('Function not implemented.');
+      } } />
       <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-6 flex flex-col justify-center sm:py-12 bg-[url('https://res.cloudinary.com/dbczn8b8l/image/upload/v1721728880/boyufjl3tsa03ybtiw6a.webp')] bg-cover bg-no-repeat">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 dark:from-gray-800 dark:to-gray-100 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
