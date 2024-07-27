@@ -53,8 +53,8 @@ const Home = () => {
           <a href="#about" className="hover:underline" onClick={() => setIsMenuOpen(false)}>About Us</a>
           <a href="#services" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Our Services</a>
           <a href="#fleet" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Our Fleet</a>
-          <a href="" className="bg-yellow-500 text-black py-1 px-3 rounded hover:bg-yellow-400" onClick={() => setIsMenuOpen(false)}>Register</a>
-          <a href="/Login" className="bg-green-500 text-white py-1 px-3 rounded hover:bg-green-400" onClick={() => setIsMenuOpen(false)}>Login</a>
+          <Link to="/createAccount" className="bg-yellow-500 text-black py-1 px-3 rounded hover:bg-yellow-400">Create Acount</Link>
+          <Link to="/login" className="bg-green-500 text-white py-1 px-3 rounded hover:bg-green-400">Login</Link>
         </div>
       </nav>
       
