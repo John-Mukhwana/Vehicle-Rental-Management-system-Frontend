@@ -28,7 +28,7 @@ const Home = () => {
             <a href="#services" className="hover:underline">Our Services</a>
             <a href="#fleet" className="hover:underline">Our Fleet</a>
             <Link to="/createAccount" className="bg-yellow-500 text-black py-1 px-3 rounded hover:bg-yellow-400">Create Acount</Link>
-            <Link to="/Login" className="bg-green-500 text-white py-1 px-3 rounded hover:bg-green-400">Login</Link>
+            <Link to="/login" className="bg-green-500 text-white py-1 px-3 rounded hover:bg-green-400">Login</Link>
           </div>
 
           {/* Hamburger Icon for Small Screens */}

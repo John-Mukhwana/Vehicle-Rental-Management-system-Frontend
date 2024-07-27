@@ -45,7 +45,7 @@ function App() {
     errorElement: <Error />,
    },
    {
-    path: "/Login",
+    path: "/login",
     element: <UserLogin />,
     errorElement: <Error />,
    },
