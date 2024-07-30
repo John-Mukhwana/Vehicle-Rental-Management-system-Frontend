@@ -27,7 +27,7 @@ const ManageBookings: React.FC = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get<Booking[]>('http://localhost:8000/api/bookings');
+        const response = await axios.get<Booking[]>('https://exotravel-vehicle-rental-management.onrender.com/api/bookings');
         setBookings(response.data);
       } catch (error) {
         setError(`Error fetching bookings: ${axios.isAxiosError(error) ? error.message : 'Unknown error'}`);
@@ -47,7 +47,7 @@ const ManageBookings: React.FC = () => {
   const handleDelete = async (bookingId: number) => {
     if (window.confirm('Are you sure you want to delete this booking?')) {
       try {
-        await axios.delete(`http://localhost:8000/api/bookings/${bookingId}`);
+        await axios.delete(`https://exotravel-vehicle-rental-management.onrender.com/api/bookings/${bookingId}`);
         setBookings(bookings.filter(booking => booking.bookingId !== bookingId));
         toast.success('Booking deleted successfully!');
       } catch (error) {
@@ -63,7 +63,7 @@ const ManageBookings: React.FC = () => {
     setError(null);
 
     try {
-      await axios.put(`http://localhost:8000/api/bookings/${updatedBooking.bookingId}`, updatedBooking, {
+      await axios.put(`https://exotravel-vehicle-rental-management.onrender.com/api/bookings/${updatedBooking.bookingId}`, updatedBooking, {
         headers: {
           'Content-Type': 'application/json',
         },

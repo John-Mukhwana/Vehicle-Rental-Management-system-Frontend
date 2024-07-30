@@ -23,7 +23,7 @@ interface Ticket {
   user: User;
 }
 
-const API_URL = 'http://localhost:8000/api/tickets';
+const API_URL = 'https://exotravel-vehicle-rental-management.onrender.com/api/tickets';
 
 const getToken = () => {
   return localStorage.getItem('authToken');

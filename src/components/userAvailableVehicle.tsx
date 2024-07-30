@@ -30,7 +30,7 @@ const AvailableVehicles: React.FC = () => {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/vehicles');
+        const response = await fetch('https://exotravel-vehicle-rental-management.onrender.com/api/vehicles');
         const data: Vehicle[] = await response.json();
         setVehicles(data);
       } catch (error) {

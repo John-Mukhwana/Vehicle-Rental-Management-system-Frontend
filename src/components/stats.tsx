@@ -17,10 +17,10 @@ const Stats = () => {
     const fetchStats = async () => {
       try {
         // Define the endpoints
-        const userEndpoint = 'http://localhost:8000/api/users';
-        const bookingsEndpoint = 'http://localhost:8000/api/bookings';
-        const vehiclesEndpoint = 'http://localhost:8000/api/vehicles';
-        const fleetsEndpoint = 'http://localhost:8000/api/fleets'; // Endpoint for fleet data
+        const userEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/users';
+        const bookingsEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/bookings';
+        const vehiclesEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/vehicles';
+        const fleetsEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/fleets'; // Endpoint for fleet data
 
         // Fetch token from localStorage
         const token = localStorage.getItem('authToken');

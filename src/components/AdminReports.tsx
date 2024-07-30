@@ -27,11 +27,11 @@ const Reports: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const userEndpoint = 'http://localhost:8000/api/users';
-        const bookingsEndpoint = 'http://localhost:8000/api/bookings';
-        const vehiclesEndpoint = 'http://localhost:8000/api/vehicles';
-        const fleetsEndpoint = 'http://localhost:8000/api/fleets';
-        const vehicleSpecsEndpoint = 'http://localhost:8000/api/vehicleSpecifications';
+        const userEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/users';
+        const bookingsEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/bookings';
+        const vehiclesEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/vehicles';
+        const fleetsEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/fleets';
+        const vehicleSpecsEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/vehicleSpecifications';
 
         const token = localStorage.getItem('authToken');
 

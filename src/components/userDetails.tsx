@@ -29,7 +29,7 @@ const UserDetailsForm: React.FC = () => {
       console.log('Submitting data:', payload);
 
       // Post data to backend using axios
-      const response = await axios.post('http://localhost:8000/api/users', payload);
+      const response = await axios.post('https://exotravel-vehicle-rental-management.onrender.com/api/users', payload);
 
       // Handle successful response
       if (response.status === 201) {

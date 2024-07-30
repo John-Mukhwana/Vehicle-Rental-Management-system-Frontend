@@ -38,7 +38,7 @@ const LocationAndBranches: React.FC = () => {
       if (!token) {
         throw new Error('No token found');
       }
-      const response = await axios.get('http://localhost:8000/api/locationAndBranches', {
+      const response = await axios.get('https://exotravel-vehicle-rental-management.onrender.com/api/locationAndBranches', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -69,7 +69,7 @@ const LocationAndBranches: React.FC = () => {
       // Log data being sent to the server
       console.log('Sending data:', editForm);
 
-      await axios.put(`http://localhost:8000/api/locationAndBranches/${editForm.locationId}`, editForm, {
+      await axios.put(`https://exotravel-vehicle-rental-management.onrender.com/api/locationAndBranches/${editForm.locationId}`, editForm, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -88,7 +88,7 @@ const LocationAndBranches: React.FC = () => {
       if (!token) {
         throw new Error('No token found');
       }
-      await axios.delete(`http://localhost:8000/api/locationAndBranches/${id}`, {
+      await axios.delete(`https://exotravel-vehicle-rental-management.onrender.com/api/locationAndBranches/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },

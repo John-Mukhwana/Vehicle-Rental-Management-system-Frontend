@@ -35,7 +35,7 @@ const UserProfile: React.FC = () => {
       const userId = getUserId();
       if (!token || !userId) throw new Error('Missing token or userId');
 
-      const response = await axios.get(`http://localhost:8000/api/users/${userId}`, {
+      const response = await axios.get(`https://exotravel-vehicle-rental-management.onrender.com/api/users/${userId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -75,7 +75,7 @@ const UserProfile: React.FC = () => {
       // Update the profile picture URL in editForm
       const updatedForm = { ...editForm, profilePicture: profilePictureUrl };
 
-      await axios.put(`http://localhost:8000/api/users/${userId}`, updatedForm, {
+      await axios.put(`https://exotravel-vehicle-rental-management.onrender.com/api/users/${userId}`, updatedForm, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },

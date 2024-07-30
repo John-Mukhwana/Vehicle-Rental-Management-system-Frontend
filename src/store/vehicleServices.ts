@@ -1,24 +1,8 @@
-// // src/services/vehicleService.ts
 
-// export const getVehicles = async (): Promise<any[]> => {
-//     try {
-//       const response = await fetch('http://localhost:8000/api/vehicles');
-//       if (!response.ok) {
-//         throw new Error('Network response was not ok');
-//       }
-//       const data = await response.json();
-//       return data; // Ensure this matches the shape of your data
-//     } catch (error) {
-//       console.error('Error fetching vehicles:', error);
-//       return [];
-//     }
-//   };
-//   export default getVehicles;
-  // src/services/vehicleService.ts
 
 export const getVehicles = async (): Promise<any[]> => {
   try {
-    const response = await fetch('http://localhost:8000/api/vehicles');
+    const response = await fetch('https://exotravel-vehicle-rental-management.onrender.com/api/vehicles');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }

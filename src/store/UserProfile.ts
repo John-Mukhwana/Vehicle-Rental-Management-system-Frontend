@@ -23,7 +23,7 @@ export const useAdminAside = () => {
       setUserName(storedUserName);
     } else if (userId) {
       // Replace with your API endpoint to fetch user data
-      fetch(`http://localhost:8000/api/users`)
+      fetch(`https://exotravel-vehicle-rental-management.onrender.com/api/users`)
       
         .then(response => response.json())
 

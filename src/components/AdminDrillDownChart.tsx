@@ -14,8 +14,8 @@ const DrilldownChart: React.FC = () => {
     const fetchData = async () => {
       try {
         // Define the endpoints
-        const bookingsEndpoint = 'http://localhost:8000/api/bookings';
-        const fleetsEndpoint = 'http://localhost:8000/api/fleets';
+        const bookingsEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/bookings';
+        const fleetsEndpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/fleets';
 
         // Fetch token from localStorage
         const token = localStorage.getItem('authToken');

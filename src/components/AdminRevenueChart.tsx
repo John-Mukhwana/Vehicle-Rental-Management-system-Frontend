@@ -34,7 +34,7 @@ const MonthlyRevenueChart: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const endpoint = 'http://localhost:8000/api/bookings';
+        const endpoint = 'https://exotravel-vehicle-rental-management.onrender.com/api/bookings';
         const token = localStorage.getItem('authToken'); // Fetch token from localStorage
 
         const response = await axios.get(endpoint, {

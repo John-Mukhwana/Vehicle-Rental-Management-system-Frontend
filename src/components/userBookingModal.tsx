@@ -20,7 +20,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ vehicleId, isOpen, onClose 
     if (isOpen) {
       const fetchVehicleData = async () => {
         try {
-          const response = await fetch(`http://localhost:8000/api/vehicles/${vehicleId}`);
+          const response = await fetch(`https://exotravel-vehicle-rental-management.onrender.com/api/vehicles/${vehicleId}`);
           if (!response.ok) {
             throw new Error('Failed to fetch vehicle data');
           }
@@ -45,7 +45,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ vehicleId, isOpen, onClose 
 
   const handleBook = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/create-checkout-session', {
+      const response = await fetch('https://exotravel-vehicle-rental-management.onrender.com/api/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

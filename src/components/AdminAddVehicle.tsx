@@ -20,7 +20,7 @@ const AdminAddVehicle: React.FC = () => {
 
         try {
             const response: AxiosResponse<any, any> = await axios.post(
-                'http://localhost:8000/api/vehicles',
+                'https://exotravel-vehicle-rental-management.onrender.com/api/vehicles',
                 {
                     vehicleId,
                     rentalRate,

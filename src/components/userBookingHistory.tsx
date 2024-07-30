@@ -41,7 +41,7 @@ const BookingHistory: React.FC = () => {
           return;
         }
 
-        const response = await axios.get<Booking[]>('http://localhost:8000/api/bookings', {
+        const response = await axios.get<Booking[]>('https://exotravel-vehicle-rental-management.onrender.com/api/bookings', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -71,7 +71,7 @@ const BookingHistory: React.FC = () => {
           return;
         }
 
-        const response = await axios.get<VehicleSpecification[]>('http://localhost:8000/api/vehicleSpecifications', {
+        const response = await axios.get<VehicleSpecification[]>('https://exotravel-vehicle-rental-management.onrender.com/api/vehicleSpecifications', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

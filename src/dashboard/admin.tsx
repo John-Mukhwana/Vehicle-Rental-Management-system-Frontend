@@ -28,7 +28,7 @@ const AdminDashboard = () => {
     if (userId) {
       try {
         const token = localStorage.getItem('authToken');
-        const response = await axios.get(`http://localhost:8000/api/users/${userId}`, {
+        const response = await axios.get(`https://exotravel-vehicle-rental-management.onrender.com/api/users/${userId}`, {
           headers: {
             'Authorization': `Bearer ${token}`,
           },

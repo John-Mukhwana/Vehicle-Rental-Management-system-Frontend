@@ -61,7 +61,7 @@ const AddBookingForm: React.FC<AddBookingFormProps> = ({ onAdd }) => {
 
     try {
       const response = await axios.post<Booking>(
-        'http://localhost:8000/api/bookings',
+        'https://exotravel-vehicle-rental-management.onrender.com/api/bookings',
         updatedBooking,
         {
           headers: {

@@ -41,7 +41,7 @@ const UserPayments: React.FC = () => {
                     return;
                 }
 
-                const response = await axios.get(`http://localhost:8000/api/payments`, {
+                const response = await axios.get(`https://exotravel-vehicle-rental-management.onrender.com/api/payments`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

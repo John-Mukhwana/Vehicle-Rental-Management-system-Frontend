@@ -20,7 +20,7 @@ interface FleetManagement {
   updatedAt: string;
 }
 
-const API_URL = 'http://localhost:8000/api/fleets';
+const API_URL = 'https://exotravel-vehicle-rental-management.onrender.com/api/fleets';
 
 const getToken = () => {
   return localStorage.getItem('authToken');

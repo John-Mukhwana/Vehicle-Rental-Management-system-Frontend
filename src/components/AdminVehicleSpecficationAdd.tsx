@@ -42,7 +42,7 @@ const AdminAddVehicleSpecifications: React.FC = () => {
         setLoading(true);
 
         try {
-            await axios.post('http://localhost:8000/api/vehicleSpecifications', formData, {
+            await axios.post('https://exotravel-vehicle-rental-management.onrender.com/api/vehicleSpecifications', formData, {
                 headers: {
                     'Content-Type': 'application/json',
                 },

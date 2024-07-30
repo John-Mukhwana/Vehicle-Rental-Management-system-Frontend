@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000/api/vehicles';
+const API_URL = 'https://exotravel-vehicle-rental-management.onrender.com/api/vehicles';
 
 // Function to retrieve the token from local storage
 const getToken = () => localStorage.getItem('token');
