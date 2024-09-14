@@ -44,6 +44,7 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     fetchProfileData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleLinkClick = () => {
@@ -63,7 +64,7 @@ const AdminDashboard = () => {
   return (
     <>
       <Navbar toggleSidebar={toggleSidebar} />
-      <div className="flex flex-col h-screen md:flex-row">
+      <div className="flex flex-col h-screen md:flex-row ">
         {/* Sidebar */}
         <aside className={`fixed z-40 h-full bg-green-600 dark:bg-gray-900 shadow-2xl transition-transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:translate-x-0 md:w-64`}>
           <div className="flex flex-col h-full overflow-y-auto">
@@ -134,7 +135,7 @@ const AdminDashboard = () => {
         </aside>
 
         {/* Main content */}
-        <div className="flex-1 flex flex-col md:ml-64">
+        <div className="flex-1 flex flex-col md:ml-0">
           <div className="flex-1 p-6 overflow-y-auto bg-gray-400 dark:bg-gray-800">
             <Outlet />
           </div>

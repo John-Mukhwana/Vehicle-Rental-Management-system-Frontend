@@ -3,3 +3,27 @@
 @tailwind utilities;
 
 
+@media (min-width: 768px) {
+    .sidebar {
+      transform: translateX(0);
+    }
+  }
+  
+  .sidebar {
+    transition: transform 0.3s ease;
+  }
+
+  /* Default styles for portrait mode */
+.sidebar {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Styles for landscape mode */
+  @media (orientation: landscape) {
+    .sidebar {
+      width: 25%;
+      height: 100vh;
+    }
+  }
+  
